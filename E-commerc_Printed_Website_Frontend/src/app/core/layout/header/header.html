@@ -1,26 +1,49 @@
 <div class="header_Url">
+
     <img [src]="iconUrlCar" alt="Car">
+
     <div class="Right_side">
             <a routerLink="">Home</a>
             <a routerLink="/contact">Contact Us</a>
             <a routerLink="/about">About Us</a>
             <a routerLink="/Login">Login</a>
-            <a routerLink="/cart">Cart</a>
+            <a routerLink="/cart">Cart (${{cartPayment}})</a>
     </div>
 </div>
 
 
 <div class="header_main">
-    <img [src]="logoUrlPT" alt="Logo">
-    <div class="search_container">
 
+    <img [src]="logoUrlPT" alt="Logo">
+
+    <div class="search_container">
         <select class="category_dropdown">
             <option value="">All Category</option>
             <option value=""></option>
         </select>
         <input type="text" placeholder="Search......" class="search_input">
-        <button class="search_button">
-            🔍
-        </button>
+    </div>
+
+    <a routerLink="/requestForCallBack" class="callback-card">
+        <div class="request_for_callback">
+            <div class="phone">
+                <img [src]="callIcon" alt="Call">
+            </div>
+            <div class="text_request">
+                Request for Call back
+            </div>
+        </div>
+    </a>
+
+
+    <div class="email_and_call">
+        <div class="call_details">
+            <img [src]="callIcon" alt="Call">
+            +92 319 1234567
+        </div>
+        <div class="email_details">
+            <img [src]="emailIcon" alt="Email">
+            hammad@gmail.com
+        </div>
     </div>
 </div>

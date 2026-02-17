@@ -23,7 +23,7 @@
 
 .Right_side a {
     text-decoration: none;
-    color: black;
+    color: white;
     padding-right: 2rem;
 }
 
@@ -46,6 +46,7 @@
     overflow: hidden;
     width: 600px;
     height: 50px;
+    margin-left: 4rem;
 }
 
 .category_dropdown {
@@ -70,15 +71,58 @@
     outline: none;
 }
 
-.search_btn {
+.search_container img{
     border: none;
-    background: transparent;
+    background-color: #e5e5e5;
     padding: 0 20px;
     height: 100%;
     cursor: pointer;
     font-size: 20px;
 }
 
-.search_btn:hover {
-    background-color: #d0d0d0;
+
+.request_for_callback{
+    display: flex;
+    align-items: center;
+    background-color: #e5e5e5;
+    width: 150px;
+    height: 50px;
+    margin-left: 3rem;
+    border-radius: 10px;
+}
+
+.phone{
+    margin-right: 2rem;
+    padding-left: 0.3rem;
+}
+
+.phone img{
+    height: 2rem;
+}
+
+.call_details img{
+    height: 1.5rem;
+}
+
+.call_details{
+    display: flex;
+    align-items: center;
+}
+
+.email_and_call{
+    margin-left: 5rem;
+}
+
+.email_details img{
+    height: 1.7rem;
+}
+
+.email_details{
+     display: flex;
+    align-items: center;
+}
+
+.callback-card{
+    text-decoration: none;
+    color: black;
 }

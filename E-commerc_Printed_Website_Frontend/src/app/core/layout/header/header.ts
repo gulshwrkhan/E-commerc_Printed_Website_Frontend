@@ -4,15 +4,19 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink,NgFor],
+  imports: [RouterLink],
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
 export class Header {
   logoUrlPT: string = "/logo/PT_logo_header.png";
   iconUrlCar: string = "/icons/icon_car.png";
+  searchBarSearchIcon: string = "/icons/search_bar_search_icon.png";
+  callIcon:string = "/icons/Call-icon-png-header.png";
+  emailIcon: string = "/icons/Email-header-icon.png"; 
   selectedCategory: string = '';
   isOpen = false;
+  cartPayment = 0.00;
 
   categoryList = ['All categories',
   '"Do Not" Signs',
